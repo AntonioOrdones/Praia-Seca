@@ -1,0 +1,73 @@
+/* ==========================================================
+   Design tokens — "Lagoa & Sal"
+   Paleta tirada do pôr do sol sobre a Lagoa de Araruama:
+   sal (fundo), lagoa (turquesa), flamingo (rosa das lagoas
+   de sal e dos flamingos da APA), âmbar do sol e crepúsculo.
+   light-dark() troca tudo pelo color-scheme ativo.
+   ========================================================== */
+@layer tokens {
+  :root {
+    color-scheme: light dark;
+
+    /* Cores base */
+    --bg: light-dark(#fff6ee, #14142b);
+    --bg-tint: light-dark(#fdeee2, #1a1a38);
+    --surface: light-dark(#ffffff, #1e1f40);
+    --surface-2: light-dark(#fbf0e7, #262852);
+    --ink: light-dark(#1d1b33, #f5f1ff);
+    --ink-2: light-dark(#5d5a78, #bdb8dc);
+    --ink-3: light-dark(#8a86a3, #8e8ab3);
+    --line: light-dark(#eedfd3, #31335f);
+
+    /* Marca */
+    --lagoon: light-dark(#0a7481, #56d6de);
+    --lagoon-soft: light-dark(#d7f1f2, #173f4f);
+    --flamingo: light-dark(#d93a73, #ff7aa8);
+    --flamingo-soft: light-dark(#fde0ea, #4a2140);
+    --sun: light-dark(#e8891f, #ffb65c);
+    --sun-soft: light-dark(#fff0d9, #463524);
+    --dusk: light-dark(#6443d6, #a88dff);
+    --dusk-soft: light-dark(#ebe5ff, #2f2a5e);
+    --ok: light-dark(#1b7a4d, #5fd69a);
+    --warn: light-dark(#b5541f, #ff9d6b);
+
+    /* Faixa do pôr do sol (assinatura visual) */
+    --sunset: linear-gradient(180deg, #ffb65c 0%, #ff8a5b 25%, #ff6f91 50%, #e2467c 72%, #a58bff 100%);
+    --sunset-x: linear-gradient(90deg, #ffb65c, #ff8a5b, #ff6f91, #e2467c, #a58bff, #56d6de);
+
+    /* Tipos do roteiro */
+    --t-desl: light-dark(#5b6b8c, #9fb0d6);
+    --t-comida: var(--sun);
+    --t-ativ: var(--lagoon);
+    --t-descanso: var(--dusk);
+    --t-noite: light-dark(#3b2f8f, #c7b8ff);
+    --t-logistica: var(--ink-3);
+
+    /* Tipografia */
+    --font-display: 'Bricolage Grotesque', ui-rounded, 'Avenir Next', system-ui, sans-serif;
+    --font-body: 'Figtree', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    --font-mono: 'DM Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+    --fs-xs: 0.75rem;
+    --fs-sm: 0.8125rem;
+    --fs-md: 0.9375rem;
+    --fs-lg: 1.0625rem;
+    --fs-xl: 1.375rem;
+    --fs-2xl: clamp(1.75rem, 7vw, 2.25rem);
+    --fs-3xl: clamp(2.25rem, 10vw, 3rem);
+
+    /* Espaço, raio, sombra */
+    --sp-1: 4px; --sp-2: 8px; --sp-3: 12px; --sp-4: 16px; --sp-5: 20px; --sp-6: 24px; --sp-8: 32px;
+    --r-sm: 10px; --r-md: 16px; --r-lg: 22px; --r-pill: 999px;
+    --shadow: 0 1px 2px light-dark(rgb(60 30 20 / 0.06), rgb(0 0 0 / 0.3)), 0 8px 24px light-dark(rgb(120 60 40 / 0.08), rgb(0 0 0 / 0.35));
+    --shadow-lg: 0 20px 50px light-dark(rgb(90 40 60 / 0.18), rgb(0 0 0 / 0.55));
+
+    --tap: 44px;
+    --tabbar-h: 64px;
+    --safe-b: env(safe-area-inset-bottom, 0px);
+    --safe-t: env(safe-area-inset-top, 0px);
+    --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+
+  :root[data-theme='light'] { color-scheme: light; }
+  :root[data-theme='dark'] { color-scheme: dark; }
+}

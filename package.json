@@ -1,0 +1,23 @@
+{
+  "name": "praia-seca-a-dois",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Roteiro mobile da viagem a Praia Seca e Região dos Lagos (16–23/11/2026).",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.1.1",
+    "vite": "^8.3.1"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
