@@ -1,9 +1,9 @@
 /* Service worker: deixa o roteiro disponível offline (sinal fraco na restinga e no barco). */
-const VERSION = 'praia-seca-v3';
+const VERSION = 'praia-seca-v4';
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
-    caches.open(VERSION).then((cache) => cache.addAll(['./', './index.html', './data/lugares.json', './manifest.webmanifest']))
+    caches.open(VERSION).then((cache) => cache.addAll(['./', './index.html', './data/lugares.json', './manifest.webmanifest', './ilustracoes/casal.webp', './ilustracoes/offline.webp', './ilustracoes/404.webp']))
   );
   self.skipWaiting();
 });
