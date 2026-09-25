@@ -1,5 +1,5 @@
 /* Service worker: deixa o roteiro disponível offline (sinal fraco na restinga e no barco). */
-const VERSION = 'praia-seca-v6';
+const VERSION = 'praia-seca-v7';
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
