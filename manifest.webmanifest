@@ -1,5 +1,5 @@
 {
-  "name": "Praia Seca a dois",
+  "name": "Praia Seca a Dois",
   "short_name": "Praia Seca",
   "description": "Roteiro da viagem a Praia Seca e Região dos Lagos · 16–23 nov 2026",
   "lang": "pt-BR",
@@ -7,8 +7,8 @@
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait",
-  "background_color": "#14142B",
-  "theme_color": "#14142B",
+  "background_color": "#FFF9F3",
+  "theme_color": "#FFF9F3",
   "icons": [
     { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
     { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
